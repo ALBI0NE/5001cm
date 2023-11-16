@@ -1,0 +1,48 @@
+.purple {
+  color: #6100ff;
+}
+
+.container-hero {
+  width: 100%;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.hero {
+  height: 600px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 75%;
+}
+.container-hero img {
+  height: 500px;
+}
+.container-hero h1 {
+  font-size: 96px;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.hero-text {
+  width: 100%;
+}
+.hero-text button {
+  padding: 1rem 1.1rem;
+  border-radius: 4px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #6100ff;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
