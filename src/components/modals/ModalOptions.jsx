@@ -1,20 +1,36 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
 
 Modal.setAppElement("#root");
 
 const ModalOptions = ({ isOpen, onRequestClose }) => {
+<<<<<<< HEAD
   const navigate = useNavigate();
 
   const [isLoginFormOpen, setLoginFormOpen] = useState(false);
   const [isRegistrationFormOpen, setRegistrationFormOpen] = useState(false);
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+=======
+  const [isLoginFormOpen, setLoginFormOpen] = useState(false);
+  const [isRegistrationFormOpen, setRegistrationFormOpen] = useState(false);
+
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
   const [registerName, setRegisterName] = useState("");
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerDOB, setRegisterDOB] = useState("");
+<<<<<<< HEAD
+=======
+  const [registerGender, setRegisterGender] = useState("");
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
   const [registerLastName, setRegisterLastName] = useState("");
 
   const openLoginForm = () => {
@@ -36,6 +52,7 @@ const ModalOptions = ({ isOpen, onRequestClose }) => {
   };
 
   const handleLogin = () => {
+<<<<<<< HEAD
     fetch("http://127.0.0.1:5000/login", {
       method: "POST",
       credentials: "include",
@@ -100,6 +117,22 @@ const ModalOptions = ({ isOpen, onRequestClose }) => {
       });
   };
 
+=======
+    // Implement your login logic here
+    // You can send a request to your server or perform client-side validation
+    // If the login is successful, you can close the modal and update the UI as needed
+    closeLoginForm();
+  };
+
+  const handleRegister = () => {
+    // Implement your registration logic here
+    // You can send a request to your server or perform client-side validation
+    // If the registration is successful, you can close the modal and update the UI as needed
+    closeRegistrationForm();
+  };
+
+  // Use the useEffect hook to reset the form state when the modal is closed
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
   useEffect(() => {
     if (!isOpen) {
       setLoginFormOpen(false);

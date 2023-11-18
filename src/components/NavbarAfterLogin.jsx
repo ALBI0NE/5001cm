@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "../css_for_components/navbar.css";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 
 export default function NavbarAfterLogin() {
@@ -10,6 +11,21 @@ export default function NavbarAfterLogin() {
     sessionStorage.clear();
     navigate("/");
   };
+=======
+import ModalOptions from "./modals/ModalOptions";
+
+export default function NavbarAfterLogin() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
   return (
     <>
       <nav>
@@ -23,7 +39,11 @@ export default function NavbarAfterLogin() {
             <div className='navbar-right'>
               <ul className='navbar-options'>
                 <li>
+<<<<<<< HEAD
                   <a href='/portal' className='navbar-link'>
+=======
+                  <a href='/AfterLogin' className='navbar-link'>
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
                     Home
                   </a>
                 </li>
@@ -42,7 +62,11 @@ export default function NavbarAfterLogin() {
                     href=''
                     id='signin_btn'
                     className='navbar-link'
+<<<<<<< HEAD
                     onClick={handleSignOut}
+=======
+                    onClick={openModal}
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
                   >
                     Sign Out
                   </button>
@@ -52,6 +76,10 @@ export default function NavbarAfterLogin() {
           </div>
         </div>
       </nav>
+<<<<<<< HEAD
+=======
+      <ModalOptions isOpen={isModalOpen} onRequestClose={closeModal} />
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
     </>
   );
 }

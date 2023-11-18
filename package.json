@@ -13,8 +13,12 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.19.0"
+=======
+    "react-router-dom": "^6.16.0"
+>>>>>>> 1c81496dac85688ffa0ab29f8fd25bc85b51f622
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
