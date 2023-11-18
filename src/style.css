@@ -1,0 +1,9 @@
+/* This is a reset css code, to make sure the edges of the website 
+are 100% width of the website, plus some style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease-in-out;
+}

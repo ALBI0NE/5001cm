@@ -1,0 +1,48 @@
+.class-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #f6f6f6;
+}
+.your-classes-container {
+  text-align: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.your-classes-container h2 {
+  font-size: 60px;
+}
+.class-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.class {
+  border: 1px solid #8d8d8d;
+  padding: 10px;
+  text-align: center;
+  height: 450px;
+  width: 280px;
+  background-color: #fff;
+}
+
+.class-icon img {
+  width: 100px;
+}
+
+.class-name {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 40px;
+}

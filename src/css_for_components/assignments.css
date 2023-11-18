@@ -1,0 +1,40 @@
+.a-wrapper {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+}
+.aa-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assignments-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.assignments-wrapper h2 {
+  font-size: 60px;
+}
+
+.assignments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.assignments-table th,
+.assignments-table td {
+  border: 1px solid #ccb9b9;
+  padding: 12px;
+  text-align: left;
+}
+
+.assignments-table th {
+  background-color: #a3a3a3;
+}
